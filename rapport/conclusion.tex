@@ -1,0 +1,23 @@
+\section{Conclusions}
+\subsection{difficultés rencontrés}
+La plus grande difficulté que nous avons rencontrée dans le développement de notre jeu de la vie en Java était la gestion de l'état des cellules en fonction du nombre de voisins. Pour un jeu classique sans hashlife, nous avons considéré que toutes les cellules sur les bords ne changeraient pas d'état car elles n'ont pas huit voisins. La deuxième difficulté que nous avons rencontrée concernait l'implémentation de hashlife.
+
+Le premier problème que nous avons identifié avec hashlife est que lorsque nous ajoutons des bordures au jeu, il arrive que ces bordures prennent vie en raison des règles du jeu. Pour remédier à cela, nous avons introduit un troisième état possible pour les cellules bordant le jeu : -1. Cet état est réservé aux cellules mortes qui ne devraient jamais prendre vie. De cette manière, nous nous assurons que le calcul des générations suivantes reste correct.
+
+Le deuxième problème que nous avons rencontré avec hashlife est que plus le nombre de cellules dans le jeu est grand, plus le nombre de motifs possibles augmente, ce qui augmente le risque de collision de hachage. Pour détecter ces collisions de hachage, nous utilisons un hashmap compartimenté qui compare les caractéristiques. Cependant, cela prend du temps et ralentit considérablement l'algorithme hashlife. 
+\subsection{Bilan du projet}
+En conclusion, le développement du jeu de la vie en Java a été une expérience très enrichissante pour notre équipe. Nous avons pu mettre en pratique nos connaissances en programmation orientée objet, en architecture MVC, en gestion de projet et en collaboration en équipe. Nous avons également développé notre créativité et notre capacité à résoudre des problèmes complexes de manière efficace.
+
+De plus, ce projet nous a permis de renforcer nos compétences en communication, en coordination et en travail d'équipe. Nous avons appris à travailler ensemble de manière efficace pour atteindre nos objectifs communs, ce qui a été une expérience très formatrice pour nous tous.
+\subsection{Améliorations Possibles}
+
+Il existe plusieurs possibilités pour améliorer l'expérience utilisateur de notre application.
+
+Tout d'abord, une amélioration intéressante serait de permettre à l'utilisateur de sélectionner les voisins d'une cellule directement à partir de la grille, plutôt que de devoir choisir un type de voisinage à partir d'un bouton. Cette modification faciliterait la sélection des voisins et améliorerait l'ergonomie de l'application.
+
+De plus, pour améliorer la visualisation de la grille, il serait utile d'ajouter une fonction de zoom/dezoom. Ainsi, l'utilisateur pourrait afficher la grille à différentes échelles en fonction de ses besoins. Il serait également judicieux de donner la possibilité à l'utilisateur de définir une taille personnalisée pour la grille, ce qui permettrait une plus grande flexibilité dans la création de modèles personnalisés.
+
+Il serait aussi intéressant de permettre à l'utilisateur de choisir le nombre de générations à sauter. Pour l'instant, nous avons seulement codé une fonction pour effectuer cette tâche, mais nous n'avons pas eu le temps de l'implémenter sur l'interface graphique.
+
+Ces améliorations permettraient de rendre notre application plus conviviale et plus personnalisable pour l'utilisateur.
+

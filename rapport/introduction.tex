@@ -1,0 +1,35 @@
+\section{Introduction}
+Dans le cadre de notre formation en développement logiciel, nous avons été confrontés à un choix crucial : choisir un sujet de projet à développer dans le langage de programmation orienté objet Java. Parmi les sujets proposés, nous avons été particulièrement attirés par le jeu de la vie. En effet, ce dernier offre de nombreuses possibilités de personnalisation et d'optimisation, ce qui nous a permis de développer notre capacité à concevoir des solutions efficaces et élégantes pour des problèmes complexes. Nous avons également été motivés par le défi intellectuel que représente la conception et l'implémentation d'un projet de cet envergure, ainsi que par la perspective de pouvoir expérimenter et manipuler le modèle pour découvrir de nouveaux comportements .
+
+Dans cette première partie de notre rapport, nous allons présenter le contexte et les objectifs de notre projet, ainsi que les principes de base du jeu de la vie. Nous décrirons ensuite l'organisation de notre projet, en expliquant l'architecture du programme et les éléments techniques utilisés. Enfin, nous présenterons les expérimentations et les usages que nous avons réalisés avec notre implémentation du jeu de la vie, et nous conclurons en dressant un bilan de nos travaux et en proposant des améliorations possibles pour notre projet
+  \subsection{Contexte et objectifs du projet}
+ Le projet que nous avons entrepris consiste à implémenter un automate cellulaire basé sur le célèbre "jeu de la vie" de John Horton Conway, qui est un exemple classique d'automate cellulaire introduit en 1970. Ce jeu se déroule sur une grille bidimensionnelle de cellules qui peuvent être dans l'état "vivant" ou "mort". Les cellules interagissent les unes avec les autres en fonction des règles prédéfinies qui déterminent leur état à l'itération suivante en fonction de l'état de leurs voisins.
+
+Notre objectif principal était de concevoir et de développer une version du jeu de la vie qui soit personnalisable par l'utilisateur. Pour cela, nous avons créé une interface conviviale qui permet à l'utilisateur de modifier différents paramètres du jeu, tels que le type de voisinage et les règles (classiques ou personnalisées). Nous avons également implémenté l'algorithme HashLife pour accélérer le calcul de la grille.
+
+Enfin, nous avons cherché à explorer les possibilités offertes par le jeu de la vie en termes de modélisation et d'expérimentation. À cet effet, nous avons développé des outils de manipulation permettant de visualiser des patterns.
+\section{Mise en place du projet}
+Pour débuter notre projet, nous avons d'abord cherché à comprendre le jeu de la vie ainsi que ses règles. Nous nous sommes appuyés sur différents supports tels que les documents fournis par le professeur, le simulateur de jeu de la vie Golly, ainsi que d'autres ressources disponibles sur internet.
+
+Une fois que nous avons acquis une idée générale du fonctionnement du jeu, nous avons commencé à élaborer le diagramme de nos différentes classes, réparti les tâches et décidé d'organiser notre projet en différents packages pour une meilleure organisation et maintenabilité du code.
+
+Après avoir développé une première version exécutable du jeu sur la console, nous avons ajouté des fonctionnalités permettant de personnaliser les règles et le type de voisinage. Nous avons également jugé nécessaire d'ajouter un package de tests pour tester les méthodes les plus importantes.
+
+Finalement, nous avons implémenté l'algorithme HashLife pour accélérer le calcul de la grille et optimiser les performances de notre jeu de la vie.
+\section{Jeu de la vie}
+
+\subsection{Principe de fonctionnement}
+
+Le jeu de la vie est un automate cellulaire bidimensionnel dans lequel chaque cellule peut être dans l'un des deux états possibles : "vivant" ou "mort". Les cellules interagissent les unes avec les autres selon des règles prédéfinies, qui déterminent l'état de la cellule à l'itération suivante en fonction de l'état de ses voisins.
+
+Le principe de fonctionnement du jeu de la vie est basé sur quatre règles simples :
+\begin{itemize}
+\item Si une cellule morte a exactement trois voisines vivantes, elle devient vivante à la prochaine itération.
+\item Si une cellule vivante a deux ou trois voisines vivantes, elle reste vivante à la prochaine itération.
+\item Si une cellule vivante a moins de deux voisines vivantes, elle meurt à la prochaine itération .
+\item Si une cellule vivante a plus de trois voisines vivantes, elle meurt à la prochaine itération .
+\end{itemize}
+
+Ces règles simples peuvent donner lieu à des structures émergentes complexes et fascinantes, comme des oscillateurs, des vaisseaux,etc
+
+

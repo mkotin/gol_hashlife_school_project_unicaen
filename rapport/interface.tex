@@ -1,0 +1,18 @@
+\subsection{Implémentation de l'Interface graphique}
+Java Swing est l'interface que nous avons choisie pour faire l'implémentation graphique de notre simulateur. Nous y avons défini 5 classes dans le package \texttt{views} et une classe \texttt{Aide} dans le package \texttt{util}.
+
+\texttt{Views} contient les classes suivantes :
+
+\begin{enumerate}
+\item \texttt{Config} : permet de configurer le jeu en définissant les règles et le type de voisinage utilisé, et de voir l'évolution de la simulation (cellule vivante, nombre de générations, ainsi que la vitesse de l'algorithme choisi). Elle contient également un bouton qui permet d'initialiser la grille avec une configuration aléatoire.
+\item \texttt{GridGraphique} : représente la grille graphique. Elle dispose d'une fonction qui permet de cliquer sur la grille pour changer l'état de la cellule.
+\item \texttt{Rendu} : cette classe est divisée en 3 parties : une pour contenir les boutons de navigation, une pour la grille, et une dernière permettant à l'utilisateur de choisir l'algorithme utilisé pour la simulation.
+\item \texttt{Menu} : cette classe permet à l'utilisateur de choisir dans une liste de motifs prédéfinis et un bouton d'aide qui explique l'utilisation correcte de l'application.
+\item \texttt{MainWindow} : est la classe principale qui compose l'ensemble des composants de l'interface graphique. Elle met en liaison la partie interface graphique et le modèle du simulateur (\texttt{game}).
+\end{enumerate}
+
+\texttt{Util} contient la classe suivante :
+
+\begin{itemize}
+\item \texttt{Aide} : cette classe importe un fichier texte expliquant le bon fonctionnement du simulateur.
+\end{itemize}

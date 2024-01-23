@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+=======
+Bienvenue sur la page d'aide de notre application de simulation du Jeu de la vie !
+
+Cette page a pour but de vous aider à mieux comprendre les fonctionnalités
+et les commandes de notre application.
+
+Pour commencer le jeu, vous avez la possibilité de
+cliquer sur le bouton "Classic" pour jouer un jeu classique de Game of Life.
+Vous pouvez également cliquer sur "Hashlife" pour jouer avec 
+une version plus rapide de l'algorithme.
+
+1.Comment utiliser les boutons de contrôle ?
+Les boutons de contrôle permettent de démarrer/arrêter (play/stop)
+la simulation, avancer/reculer (next/back) d'une génération,
+accélérer/ralentir (fast/slow) la simulation et restaurer (reset) la grille.
+Le bouton "Help" redirige vers cette page d'aide pour 
+une utilisation optimale de l'application.
+
+2.Comment utiliser la liste de patterns disponibles ?
+La liste de patterns disponibles permet aux utilisateurs
+de choisir un modèle prédéfini pour la simulation.
+Vous pouvez sélectionner un pattern en cliquant dessus dans la liste.
+
+Comment choisir les règles utilisées pour la simulation ?
+Le bouton "rules" permet aux utilisateurs de choisir
+la règle utilisée pour la simulation (Game of Life par défaut).
+Vous pouvez choisir Game of Life ou entrer votre propre règle
+au format "BxySxy" ou "Bx-ySxy" ou "BxySx-y" ou "Bx-ySx-y" en cliquant sur "autre".
+
+Comment choisir le type de voisins utilisé pour la simulation ?
+Le bouton type de voisins permet aux utilisateurs de choisir
+le type de voisinage utilisé (Game of Life par défaut).
+Vous pouvez sélectionner un type de voisins en cliquant dessus dans la liste.
+
+Comment connaître la vitesse d'exécution de la simulation ?
+La vitesse d'exécution de la simulation est affichée dans le champ
+juste devant la phrase "Vitesse d'exécution".
+
+Comment initialiser la grille ?
+Vous pouvez cliquer sur le bouton "Init random" pour initialiser la grille 
+avec des cellules aléatoires, ou sélectionner un pattern existant dans la liste,
+ou encore cliquer directement sur les cellules de la grille pour les activer/désactiver
+>>>>>>> 15dc2c0edd0da93c3322d6456ed56feef2dde5a3

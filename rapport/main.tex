@@ -1,0 +1,33 @@
+\documentclass{report}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+
+\title{SimulateurJeuDeLaVie}
+\author{Saoudatou Sow}
+\date{April 2023}
+
+\begin{document}
+\renewcommand{\contentsname}{Table des matières}
+\renewcommand{\bibname}{Bibliographie}
+\renewcommand{\thesection}{\arabic{section}}
+\input{title.tex}
+\newpage
+\tableofcontents% affiche la table des matières
+\newpage
+
+\input{introduction.tex}
+\input{organisation.tex}
+\input{elementTechnique.tex}
+\input{experimentation.tex}
+\input{conclusion.tex}
+\bibliographystyle{plain}
+\bibliography{reference}
+\nocite{mind}
+\nocite{Golly}
+\nocite{Mathmatique}
+\nocite{WIKIPEDIA}
+\nocite{WIKIP}
+
+ 
+\end{document}
